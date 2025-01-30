@@ -57,7 +57,7 @@ export default function Home() {
 
 	return (
     <>
-     <section className="relative h-[820] flex items-center justify-center bg-gradient-to-b from-amber-100 to-white">
+     <section className="relative h-[820px] flex items-center justify-center bg-gradient-to-b from-amber-100 to-white">
         <div className="absolute inset-0">
           <img 
             src="/hero.jpg" 
