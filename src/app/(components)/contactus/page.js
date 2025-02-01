@@ -109,9 +109,9 @@ Message: ${formData.message}
 
         <div className="container mx-auto px-4 py-16 max-w-6xl">
       <div className="text-left lg:text-center mb-8 mt-1 lg:mt-12 pb-8">
-        <h1 className="text-[32px] lg:text-[48px] lg:leading-[64px] leading-[44px] font-bold mb-4">Contact our team</h1>
+        <h1 className="text-[32px] lg:text-[34px] lg:leading-[64px] leading-[44px] font-bold mb-4">Contact our team</h1>
         <p className="text-gray-600 text-[20px]">
-          Got any questions about the product or scaling on our platform? We're here to help.<br />
+          Got any questions about the product or scaling on our platform? We're here to help.<br /> <br />
           Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
         </p>
       </div>
@@ -215,7 +215,7 @@ Message: ${formData.message}
         </div>
 
         {/* Contact Information */}
-        <div className="space-y-8 p-12 bg-gray-50">
+        <div className="space-y-8 p-6 bg-gray-50">
           <div>
             <h2 className="text-[20px] font-semibold mb-4">Chat with us</h2>
             <p className="text-gray-600 mb-4">Speak to our friendly team via live chat.</p>

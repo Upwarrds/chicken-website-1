@@ -38,26 +38,26 @@ export default function Home() {
   const faqs = [
     {
       question: "What is organic farming and why is it important?",
-      answer: "It is a long established fact first, a reader will be distracted by the readable content and page when looking at its layout. The point of using Lorem there is not ipsum. Various versions have evolved (by accident, sometimes on purpose (injected humour and the like))."
+      answer: "Organic farming ensures that your poultry is raised without harmful chemicals, providing healthier eggs and meat."
     },
     {
-      question: "Do you use herbicides?",
-      answer: "No, we practice organic farming methods that avoid the use of herbicides. Instead, we use natural weed control methods and sustainable farming practices to maintain the health of our poultry and protect the environment."
+      question: "Do you use antibiotics?",
+      answer: "Our farming methods emphasize natural health management, reducing reliance on antibiotics."
     },
     {
-      question: "What do you add to the soil before you plant a crop?",
-      answer: "We enrich our soil with organic compost, natural fertilizers, and cover crops. This helps maintain soil fertility, improves structure, and provides essential nutrients for healthy crop growth that benefits our poultry."
+      question: "How does organic farming impact the taste and nutrition of poultry?",
+      answer: "Healthier diets lead to better-tasting poultry and eggs packed with nutrients."
     },
     {
-      question: "How does organic farming improve soil and water quality?",
-      answer: "Organic farming improves soil health through natural composting, crop rotation, and avoiding synthetic chemicals. This leads to better water retention, reduced erosion, and improved water quality for our ducks and poultry."
+      question: "How does organic farming keep our farm clean and safe?",
+      answer: "Sustainable farming practices create a cleaner, safer environment for both poultry and farmers."
     }
   ];
 
 
 	return (
     <>
-     <section className="relative h-[820px] flex items-center justify-center bg-gradient-to-b from-amber-100 to-white">
+     <section className="relative h-[580px] lg:h-[820px] flex items-center justify-center bg-gradient-to-b from-amber-100 to-white">
         <div className="absolute inset-0">
           <img 
             src="/hero.jpg" 
@@ -66,40 +66,42 @@ export default function Home() {
           />
         </div>
         <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-amber-900 mb-6">
-            Learn How to Grow Healthy Chickens
+          <h1 className="text-4xl md:text-[54px] md:leading-[58px] font-bold text-amber-900 mb-6">
+          Essential Guide to Poultry Farming & Health
           </h1>
           <p className="text-xl md:text-2xl text-amber-800 mb-8 max-w-2xl mx-auto">
-            Expert guidance on raising happy, healthy chickens for sustainable farming
+          Expert insights on raising healthy chickens and ducks for sustainable farming.
           </p>
-          <Link href="/contact">
-        <button className="px-6 py-2 my-4 bg-[#121212] text-white"> Contact Us </button>
+          <Link href="/guide">
+        <button className="px-6 py-2 my-4 bg-[#121212] text-white"> Lets Get Started </button>
       </Link>
         </div>
       </section>
 
       {/* Second Section */}
-      <section className="pt-16 pb-4 my-16 bg-white">
+      <section className="lg:pt-16 pt-8 pb-4 my-8 lg:my-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
                 src="/pic1.jpg"
                 alt="Healthy chickens in a farm"
-                className="shadow-xl w-full h-[750] object-cover"
+                className="shadow-xl w-full h-[400px] lg:h-[750] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
-                Start Your Chicken Farming Journey
+              <h2 className="text-4xl md:text-[54px] md:leading-[58px] font-bold text-gray-900 mb-6">
+              Getting Started with <br/> Poultry Farming
               </h2>
-              <p className="text-lg text-gray-700 mb-8">
-                Whether you're a beginner or experienced farmer, our comprehensive guides 
-                and expert advice will help you raise healthy chickens. Learn about proper 
-                feeding, housing, healthcare, and sustainable farming practices.
+              <p className="text-[20px] text-gray-700 mb-8">
+              Whether you’re a beginner or an experienced farmer, our comprehensive guide and expert advice will help you maintain a thriving poultry flock. 
+              Learn about proper feeding, housing, healthcare, and sustainable farming practices. <br/> <br/> 
+
+              Expanding your poultry farm requires careful planning and investment in modern techniques. From automated feeding systems to climate-controlled housing, innovations in poultry farming help improve productivity while ensuring bird welfare. 
+              Understanding the economic aspects, market demands, and sustainable practices can lead to long-term success in the poultry industry.
               </p>
-              <Link href="/contact">
-        <button className="px-6 py-2 my-4 bg-[#121212] text-white"> Contact Us </button>
+              <Link href="/aboutus">
+        <button className="px-6 py-2 bg-amber-800 text-white"> Read More </button>
       </Link>
             </div>
           </div>
@@ -107,8 +109,8 @@ export default function Home() {
       </section>
 
               {/*  Section 3 Section */}
-              <section className="container mx-auto px-4 my-16 py-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <section className="container mx-auto px-4 lg:my-16 lg:py-16 my-8 py-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
         {farmImages.map((image, index) => (
           <div 
             key={index}
@@ -117,7 +119,7 @@ export default function Home() {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-[200px] lg:h-[256px] object-cover transform transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100">
               <h3 className="text-white font-semibold text-lg">
@@ -134,44 +136,43 @@ export default function Home() {
 
 
     {/*  Section 4 Section */}
-    <main className="py-16 my-16 bg-white">
-      <div className="container mx-auto">
+    <main className="lg:py-16 lg:my-16 py-8 my-8 bg-white">
+      <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column */}
 
           <div className="flex flex-col justify-center space-y-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Welcome to Our Poultry And Egg Farm.
+            <h1 className="text-4xl md:text-[54px] md:leading-[58px] font-bold text-gray-900">
+            Sustainable Poultry and Egg Production
             </h1>
             
-            <p className="text-gray-600 text-lg">
-              Cost-effective productive competitive quality for packed with taskless 
-              processes compelling quality top species with all banker! From getting 
-              to business marketing quality.
+            <p className="text-gray-600 text-[20px]">
+            Implementing efficient farming practices and ensuring competitive quality for products that sustain progress. 
+            Our focus is on ethical farming and superior poultry care.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-amber-600"></div>
-                <span className="text-gray-800">We are providing different services</span>
+                <span className="text-gray-600 text-[20px] ">Prioritizing poultry welfare.</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-amber-600"></div>
-                <span className="text-gray-800">We are one of leading company</span>
+                <span className="text-gray-600 text-[20px]">Enhancing efficiency in poultry farming.</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-amber-600"></div>
-                <span className="text-gray-800">Profitability is the primary goal of all business</span>
+                <span className="text-gray-600 text-[20px]">Maintaining high standards in farming environments.</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-amber-600"></div>
-                <span className="text-gray-800">Learn how to grow your Business</span>
+                <span className="text-gray-600 text-[20px]">Collaborate with us for modern poultry solutions.</span>
               </div>
             </div>
 
             <div>
             <Link href="/contact">
-        <button className="px-6 py-2 my-4 bg-[#121212] text-white"> Contact Us </button>
+        <button className="px-6 py-2 bg-amber-800 text-white"> Contact Us </button>
       </Link>
             </div>
           </div>
@@ -205,19 +206,19 @@ export default function Home() {
 
 
             {/* CTA Banner */}
-        <div className="container mx-auto px-16 bg-gray-100 text-white my-16 py-16">
-          <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row justify-between align-middle space-y-4 md:space-y-0">
-              <div className="text-center md:text-left">
-                <h2 className="text-2xl text-[#353535] md:text-3xl font-bold mb-2">
-                  Call to Action Banner
+        <div className="container mx-auto p-4 lg:px-16 bg-amber-900 text-white lg:my-16 lg:py-16 my-8 py-8">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between align-middle lg:items-center items-left space-y-4 md:space-y-0">
+              <div className="lg:text-left md:text-left text-left">
+                <h2 className="text-[32px] text-[#fff] md:text-[34px] font-bold mb-2">
+                Join Our Poultry Farming Community
                 </h2>
-                <p className="text-gray-400 text-[18px]">
-                  Here's a great place to write something specific that you want your visitors to read.
+                <p className="text-gray-100 text-[20px]">
+                Stay updated with the latest poultry farming trends and expert recommendations to improve your farm’s efficiency.
                 </p>
               </div>
               <Link href="/contact">
-        <button className="px-6 py-2 my-4 bg-[#121212] text-white"> Contact Us </button>
+        <button className="px-6 py-2 bg-[#121212] text-white"> Contact Us </button>
       </Link>
             </div>
           </div>
@@ -226,7 +227,7 @@ export default function Home() {
 
     {/*  Section 5 Section */}
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-8 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
 
@@ -235,7 +236,7 @@ export default function Home() {
               <img
                 src="/pic1.jpg"
                 alt="White duck close-up"
-                className="w-full h-[700] object-cover"
+                className="w-full lg:h-[700] h-[350] object-cover"
               />
             </div>
             {/* Decorative shape */}
@@ -244,9 +245,9 @@ export default function Home() {
 
           <div>
             {/* <span className="text-gray-500 mb-4 inline-block">— Top Frequently —</span> */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              We take care of duck And{' '}
-              <span className="text-amber-500">Poultry</span> health
+            <h1 className="pt-12 lg:pt-0 text-4xl md:text-[54px] md:leading-[58px] font-bold text-gray-900 mb-4">
+            Ensuring Optimal Health for {' '}
+              <span className="text-amber-500">Chickens</span>
             </h1>
 
           {/* Right Image */}
