@@ -72,7 +72,7 @@ export default function Header(params) {
 							onClick={closeMenu}
 							className={`block my-3 px-4 lg:px-6 py-2 text-[14px] font-medium text-left text-[#353535] hover:bg-[#353535] hover:text-[#fff] sm:hover:bg-[#353535] ${pathname ===
 							item.path
-								? 'bg-[#353535] text-[#fff]'
+								? 'bg-[#4fca59] text-[#fff]'
 								: ''}`}
 						>
 							{item.label}

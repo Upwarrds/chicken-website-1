@@ -18,7 +18,7 @@ export default function Footer(params) {
                 <span className="text-xl font-bold">CITRUS</span>
               </div>
               <p className="text-gray-400 text-sm">
-              Optimizing poultry health with advanced citrus-based feed solutions. Boost immunity, enhance growth, and ensure better productivity for your farm.
+              Citrus Agro Vet specializes in high-quality feed supplements and biotech-based veterinary products, enhancing animal health and productivity.
               </p>
               <div className="flex space-x-4">
               {/* <Link href='https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105014778&keywords=upwarrds&origin=RICH_QUERY_SUGGESTION&position=0&searchId=826a987a-4bbb-41d6-8a05-3c202b4ec637&sid=om1&spellCorrectionEnabled=false'>
@@ -48,7 +48,7 @@ export default function Footer(params) {
               <h3 className="text-lg font-bold mb-4">Links</h3>
               <ul className="space-y-2">
                 <li><a href="/aboutus" className="text-gray-400 hover:text-amber-500">About Us</a></li>
-                <li><a href="/guide" className="text-gray-400 hover:text-amber-500">Guide</a></li>
+                <li><a href="/products" className="text-gray-400 hover:text-amber-500">Products</a></li>
                 <li><a href="/contact" className="text-gray-400 hover:text-amber-500">Contact Us</a></li>
               </ul>
             </div>

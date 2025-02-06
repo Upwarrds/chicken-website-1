@@ -111,111 +111,30 @@ Message: ${formData.message}
       <div className="text-left lg:text-center mb-8 mt-1 lg:mt-12 pb-8">
         <h1 className="text-[32px] lg:text-[34px] lg:leading-[64px] leading-[44px] font-bold mb-4">Contact our team</h1>
         <p className="text-gray-600 text-[20px]">
-          Got any questions about the product or scaling on our platform? We're here to help.<br /> <br />
-          Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
+        Need help with our product or scaling your business? We've got you covered! Chat with our friendly team 24/7 and get started in under 5 minutes. 🚀
+        <br/> <br/>
+
+        <span className='text-[18px] lg:text-[20px] md:leading-[34px] font-medium text-[#555]'>எங்கள் தயாரிப்புகள் குறித்து உதவி தேவையா? அல்லது உங்கள் தொழிலையை வளர்த்துக்கொள்ள விரும்புகிறீர்களா? எங்களை நம்புங்கள்!
+எங்கள் நட்பு கூடிய குழுவுடன் 24/7 தொடர்பு கொண்டு, 5 நிமிடங்களில் உங்களுக்குத் தேவையான உதவியைப் பெறுங்கள். 🚀</span>
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Contact Form */}
-        <div>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-[16px] font-medium mb-2">First name</label>
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First name"
-                  className="w-full p-3 border border-gray-300 rounded-lg"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div>
-                <label className="block text-[16px] font-medium mb-2">Last name</label>
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last name"
-                  className="w-full p-3 border border-gray-300 rounded-lg"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-[16px] font-medium mb-2">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="you@company.com"
-                className="w-full p-3 border border-gray-300 rounded-lg"
-                value={formData.email}
-                onChange={handleChange}
-                required
+        <div className="space-y-8">
+            {/* Main Image */}
+            <div className="overflow-hidden">
+              <img
+                src="/pic1.jpg"
+                alt="Woman holding fresh eggs in basket"
+                className="shadow-xl w-full h-[200px] lg:h-[600] object-cover"
               />
             </div>
-
-            <div>
-              <label className="block text-[16px] font-medium mb-2">Phone number</label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Enter 10 digit mobile number"
-                className={`w-full p-3 border rounded-lg ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-              {errors.phone && <p className="text-red-500 text-[16px] mt-1">{errors.phone}</p>}
             </div>
-
             <div>
-              <label className="block text-[16px] font-medium mb-2">Message</label>
-              <textarea
-                name="message"
-                placeholder="Leave us a message..."
-                rows="4"
-                className="w-full p-3 border border-gray-300 rounded-lg"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block text-[16px] font-medium mb-2">Services</label>
-              <div className="grid grid-cols-2 gap-2">
-                {serviceOptions.map((service) => (
-                  <label key={service} className="flex items-center space-x-2">
-                    <input
-                      type="checkbox"
-                      checked={formData.services.includes(service)}
-                      onChange={() => handleServiceChange(service)}
-                      className="rounded border-gray-300"
-                    />
-                    <span className="text-[16px]">{service}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors"
-            >
-              Send message
-            </button>
-          </form>
-        </div>
 
         {/* Contact Information */}
-        <div className="space-y-8 p-6 bg-gray-50">
+        {/* <div className="space-y-8 p-6 bg-gray-50">
           <div>
             <h2 className="text-[20px] font-semibold mb-4">Chat with us</h2>
             <p className="text-gray-600 mb-4">Speak to our friendly team via live chat.</p>
@@ -247,7 +166,103 @@ Message: ${formData.message}
               100 Smith Street, Collingwood VIC 3066
             </a>
           </div>
+        </div> */}
+
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-[16px] font-medium mb-2">First name (முதல் பெயர்)</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First name"
+                  className="w-full p-3 border border-gray-300 rounded-lg"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              
+              <div>
+                <label className="block text-[16px] font-medium mb-2">Last name (கடைசி பெயர்)</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last name"
+                  className="w-full p-3 border border-gray-300 rounded-lg"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-[16px] font-medium mb-2">Email (மின்னஞ்சல்)</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="you@company.com"
+                className="w-full p-3 border border-gray-300 rounded-lg"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div>
+              <label className="block text-[16px] font-medium mb-2">Phone number (தொலைபேசி எண்)</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter 10 digit mobile number"
+                className={`w-full p-3 border rounded-lg ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+              {errors.phone && <p className="text-red-500 text-[16px] mt-1">{errors.phone}</p>}
+            </div>
+
+            <div>
+              <label className="block text-[16px] font-medium mb-2">Message (செய்தி)</label>
+              <textarea
+                name="message"
+                placeholder="Leave us a message..."
+                rows="4"
+                className="w-full p-3 border border-gray-300 rounded-lg"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            {/* <div>
+              <label className="block text-[16px] font-medium mb-2">Services</label>
+              <div className="grid grid-cols-2 gap-2">
+                {serviceOptions.map((service) => (
+                  <label key={service} className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      checked={formData.services.includes(service)}
+                      onChange={() => handleServiceChange(service)}
+                      className="rounded border-gray-300"
+                    />
+                    <span className="text-[16px]">{service}</span>
+                  </label>
+                ))}
+              </div>
+            </div> */}
+
+            <button
+              type="submit"
+              className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors"
+            >
+              Send message
+            </button>
+          </form>
         </div>
+
       </div>
     </div>
         </>

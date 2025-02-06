@@ -736,10 +736,10 @@ export default function Products(params) {
           width={735}
                 height={735}
         />
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
   </>

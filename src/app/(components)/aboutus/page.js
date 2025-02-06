@@ -40,27 +40,25 @@ export default function AboutUs(params) {
               <img
                 src="/pic1.jpg"
                 alt="Healthy chickens in a farm"
-                className="shadow-xl w-full lg:h-[750] h-[400] object-cover"
+                className="shadow-xl w-full lg:h-[900] h-[400] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-4xl md:text-[54px] md:leading-[58px] font-bold text-amber-900 mb-6">
+              <h2 className="text-4xl md:text-[54px] md:leading-[58px] font-bold text-[#353535] mb-6">
                 Start Your Chicken Farming Journey
               </h2>
-              <p className="text-lg text-gray-700 mb-8">
-              Citrus Agro Vet is a dedicated provider of high-quality feed supplements and biotechnology-based veterinary products. Our expertise lies in developing innovative solutions that enhance animal health and productivity.
+              <p className="text-[18px] lg:text-[20px] text-[#555] mb-8">
+              Citrus Agro Vet specializes in high-quality feed supplements and biotech-based veterinary products, enhancing animal health and productivity. 
+              With 20+ years of experience and collaboration with TANUVAS, we develop scientifically-backed, eco-friendly solutions. Our herbal and mineral-based 
+              supplements improve immunity, digestion, and disease resistance in poultry and livestock, making us a trusted name in animal nutrition. <br/><br/>
 
-Our research and product development are in collaboration with TANUVAS (Tamil Nadu Veterinary and Animal Sciences University), ensuring scientifically-backed formulations that improve feed efficiency and overall animal well-being.
-
-With over 20 years of experience in biotechnology, Citrus Agro Vet is committed to innovation in animal nutrition. <br/> <br/>  Our herbal and mineral-based feed supplements are formulated to enhance livestock health, strengthen immunity, and improve digestion.
-
-We strive to develop eco-friendly and sustainable solutions for livestock nutrition through extensive research and development. Our products are tailored to boost growth, enhance productivity, and support disease resistance in poultry and livestock.
-
-Our focus on natural ingredients, advanced biotechnology, and extensive research has made Citrus Agro Vet a trusted name in the animal nutrition industry.
+              <span className='text-[18px] lg:text-[20px] md:leading-[34px] font-medium text-[#555]'>சிட்ரஸ் ஆக்ரோ வெட் உயர்தர தீவனச் சேர்க்கைகள் மற்றும் உயிரி தொழில்நுட்ப அடிப்படையிலான கால்நடை மருத்துவ பொருட்களில் சிறப்பு பெற்ற நிறுவனம் ஆகும். இது கால்நடைகளின் ஆரோக்கியத்தையும் உற்பத்தித் திறனையும் மேம்படுத்துவதில் முக்கிய பங்கு வகிக்கிறது.
+20 ஆண்டுகளுக்கும் மேலான அனுபவத்துடன், TANUVAS உடன் இணைந்து செயல்பட்டு, அறிவியல் ஆதாரத்துடன் கூடிய, சுற்றுச்சூழலுக்கு உகந்த தீர்வுகளை உருவாக்குகிறோம்.
+எங்கள் மூலிகை மற்றும் கனிம அடிப்படையிலான தீவனச் சேர்க்கைகள், கோழிகள் மற்றும் கால்நடைகளின் நோய் எதிர்ப்புத் திறன், செரிமானம் மற்றும் நோய் எதிர்ப்பு சக்தியை மேம்படுத்த உதவுகிறது. இதன்மூலம், கால்நடை ஊட்டச்சத்து துறையில் நம்பிக்கைக்குரிய நிறுவனமாக சிட்ரஸ் ஆக்ரோ வெட் உயர்ந்துள்ளோம்.</span>
               </p>
-              <Link href="/contact">
+              {/* <Link href="/contact">
         <button className="px-6 py-2 bg-[#121212] text-white"> Contact Us </button>
-      </Link>
+      </Link> */}
             </div>
           </div>
         </div>
