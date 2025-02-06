@@ -196,7 +196,7 @@ export default function Home() {
               <img
                 src="/pic1.jpg"
                 alt="Woman holding fresh eggs in basket"
-                className="shadow-xl w-full h-[400px] lg:h-[950] object-cover"
+                className="shadow-xl w-full h-[400px] lg:h-[950px] object-cover"
               />
             </div>
             
@@ -247,7 +247,7 @@ export default function Home() {
               <img
                 src="/pic1.jpg"
                 alt="White duck close-up"
-                className="w-full lg:h-[700] h-[350] object-cover"
+                className="w-full lg:h-[700px] h-[350px] object-cover"
               />
             </div>
             {/* Decorative shape */}
