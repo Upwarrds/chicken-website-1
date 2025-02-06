@@ -88,7 +88,7 @@ export default function Home() {
               <img
                 src="/pic1.jpg"
                 alt="Healthy chickens in a farm"
-                className="shadow-xl w-full h-[400px] lg:h-[1050] object-cover"
+                className="shadow-xl w-full h-[400px] lg:h-[1050px] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
