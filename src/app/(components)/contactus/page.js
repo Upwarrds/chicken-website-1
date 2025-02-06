@@ -127,7 +127,7 @@ Message: ${formData.message}
               <img
                 src="/pic1.jpg"
                 alt="Woman holding fresh eggs in basket"
-                className="shadow-xl w-full h-[200px] lg:h-[600] object-cover"
+                className="shadow-xl w-full h-[200px] lg:h-[600px] object-cover"
               />
             </div>
             </div>
