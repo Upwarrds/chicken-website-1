@@ -6,11 +6,11 @@ import Link from 'next/link';
 export default function Products(params) {
     return(
         <>
-<div className="container mx-auto max-w-[1880px] lg:h-[300px] md:h-[300px] h-[150] relative ">
+<div className="container mx-auto max-w-[1880px] lg:h-[300px] md:h-[300px] h-[150px] relative ">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0" >
       <Image
-                src="/pic1.jpg" 
+                src="/pic4.jpg" 
                 alt="Background Banner" 
                 layout="fill" 
                 objectFit="cover" 
@@ -42,8 +42,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -145,8 +146,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -164,8 +166,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -271,8 +274,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -290,8 +294,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -387,8 +392,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -407,8 +413,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -504,8 +511,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -523,8 +531,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -614,8 +623,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -633,8 +643,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={1600}
-          height={1600}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
       </div>
     </div>
@@ -733,8 +744,9 @@ export default function Products(params) {
         <Image
           src="/pic1.jpg"
           alt="Process Illustration"
-          width={735}
-                height={735}
+          width={800}
+          height={1000}
+          className='h-[400px] rounded-[16px] lg:h-[1050px] object-cover'
         />
         </div>
       </div>

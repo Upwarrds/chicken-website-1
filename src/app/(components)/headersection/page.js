@@ -63,14 +63,14 @@ export default function Header(params) {
 				<div
 					className={`${isMenuOpen
 						? 'block'
-						: 'hidden'}  sm:my-2 sm:flex lg:px-0 px-4 py-2 sm:space-x-2 sm:items-center bg-[#eee]  sm:bg-transparent absolute sm:relative w-full sm:w-auto left-0 top-[90px] sm:top-0 z-40`}
+						: 'hidden'}  sm:my-2 sm:flex lg:px-0 px-4 py-2 rounded-full sm:space-x-2 sm:items-center bg-[#eee]  sm:bg-transparent absolute sm:relative w-full sm:w-auto left-0 top-[90px] sm:top-0 z-40`}
 				>
 					{menuItems.map((item) => (
 						<Link
 							key={item.label}
 							href={item.path}
 							onClick={closeMenu}
-							className={`block my-3 px-4 lg:px-6 py-2 text-[14px] font-medium text-left text-[#353535] hover:bg-[#353535] hover:text-[#fff] sm:hover:bg-[#353535] ${pathname ===
+							className={`block my-3 px-4 lg:px-6 py-2 text-[14px] font-medium rounded-full text-left text-[#353535] hover:bg-[#353535] hover:text-[#fff] sm:hover:bg-[#353535] ${pathname ===
 							item.path
 								? 'bg-[#4fca59] text-[#fff]'
 								: ''}`}

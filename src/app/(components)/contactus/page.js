@@ -86,7 +86,7 @@ Message: ${formData.message}
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0" >
       <Image
-                src="/pic1.jpg" 
+                src="/pic4.jpg" 
                 alt="Background Banner" 
                 layout="fill" 
                 objectFit="cover" 
@@ -125,9 +125,9 @@ Message: ${formData.message}
             {/* Main Image */}
             <div className="overflow-hidden">
               <img
-                src="/pic1.jpg"
+                src="/pic3.jpg"
                 alt="Woman holding fresh eggs in basket"
-                className="shadow-xl w-full h-[200px] lg:h-[600px] object-cover"
+                className="shadow-xl rounded-[16px] w-full h-[200px] lg:h-[600px] object-cover"
               />
             </div>
             </div>

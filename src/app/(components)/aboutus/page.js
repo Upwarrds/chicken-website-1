@@ -11,12 +11,12 @@ export default function AboutUs(params) {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0" >
               <Image
-                        src="/pic1.jpg" 
+                        src="/pic4.jpg" 
                         alt="Background Banner" 
                         fill 
                         objectFit="cover" 
                         objectPosition="center" 
-                        className="z-0"
+                        className=" z-0"
                       />
                 <div className="absolute inset-0 bg-gray-900/50"></div>
               </div>
@@ -38,9 +38,9 @@ export default function AboutUs(params) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="/pic1.jpg"
+                src="/pic3.jpg"
                 alt="Healthy chickens in a farm"
-                className="shadow-xl w-full lg:h-[900] h-[400] object-cover"
+                className="shadow-xl rounded-[16px] w-full lg:h-[900] h-[400] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">

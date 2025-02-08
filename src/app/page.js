@@ -8,19 +8,19 @@ export default function Home() {
 
   const farmImages = [
     {
-      src: "/pic1.jpg",
+      src: "/eggs.jpg",
       alt: "Brown rooster in natural setting",
       title: "Premium Roosters",
       description: "Our healthy, free-range roosters"
     },
     {
-      src: "/pic1.jpg",
+      src: "/pic8.jpg",
       alt: "Fresh eggs in nest",
       title: "Farm Fresh Eggs",
       description: "Daily collected fresh eggs"
     },
     {
-      src: "/pic1.jpg",
+      src: "/pic9.jpg",
       alt: "White chickens in farm",
       title: "Healthy Hens",
       description: "Well-cared laying hens"
@@ -60,7 +60,7 @@ export default function Home() {
      <section className="relative h-[850px] lg:h-[860px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/banner.jpg" 
+            src="/pic4.jpg" 
             alt="Chicken farm background" 
             className="w-full h-full object-cover opacity-1"
           />
@@ -75,7 +75,7 @@ export default function Home() {
           <br /> <span className='text-xl md:text-[20px] md:leading-[30px] font-medium text-text-[#555]'> டிநிலைத்தன்மை வாய்ந்த விவசாயத்திற்கு ஆரோக்கியமான கோழிகள் மற்றும் வாத்துகளை வளர்ப்பதற்கான நிபுணர்களின் நுணுக்கமான அறிவு. </span>
           </p>
           <Link href="/guide">
-        <button className="px-6 py-3 my-4 bg-[#4fca59] font-semibold text-white"> Lets Get Started </button>
+        <button className="px-6 py-3 my-4 rounded-full bg-[#4fca59] font-semibold text-white"> Lets Get Started </button>
       </Link>
         </div>
       </section>
@@ -86,9 +86,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="/pic1.jpg"
+                src="/pic2.jpg"
                 alt="Healthy chickens in a farm"
-                className="shadow-xl w-full h-[400px] lg:h-[1050px] object-cover"
+                className="shadow-xl w-full h-[400px] rounded-[16px] lg:h-[1050px] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
@@ -109,7 +109,7 @@ export default function Home() {
 பொருளாதார அம்சங்கள், சந்தை தேவைகள் மற்றும் நிலைத்தன்மை வாய்ந்த நடைமுறைகளைப் புரிந்துகொள்வது, கோழி வளர்ப்பு தொழிலில் நீண்ட கால வெற்றியை வழங்கும். </span>
               </p>
               <Link href="/aboutus">
-        <button className="px-6 py-2 bg-[#4fca59] font-semibold text-white"> Read More </button>
+        <button className="px-6 py-2 rounded-full bg-[#4fca59] font-semibold text-white"> Read More </button>
       </Link>
             </div>
           </div>
@@ -127,16 +127,10 @@ export default function Home() {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-[200px] lg:h-[256px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+              className="w-full rounded-[16px] h-[200px] lg:h-[256px] object-cover transform transition-transform duration-300 group-hover:scale-105"
             />
-            {/* <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100">
-              <h3 className="text-white font-semibold text-lg">
-                {image.title}
-              </h3>
-              <p className="text-white text-sm">
-                {image.description}
-              </p>
-            </div> */}
+            <div className="absolute rounded-[16px] inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100">
+            </div>
           </div>
         ))}
       </div>
@@ -183,7 +177,7 @@ export default function Home() {
 
             <div>
             <Link href="/contact">
-        <button className="px-6 py-2 bg-[#4fca59] text-white"> Contact Us </button>
+        <button className="px-6 py-2 rounded-full bg-[#4fca59] text-white"> Contact Us </button>
       </Link>
             </div>
           </div>
@@ -194,9 +188,9 @@ export default function Home() {
             {/* Main Image */}
             <div className="overflow-hidden">
               <img
-                src="/pic1.jpg"
+                src="/pic5.jpg"
                 alt="Woman holding fresh eggs in basket"
-                className="shadow-xl w-full h-[400px] lg:h-[950px] object-cover"
+                className="shadow-xl rounded-[16px] w-full h-[400px] lg:h-[950px] object-cover"
               />
             </div>
             
@@ -217,7 +211,7 @@ export default function Home() {
 
 
             {/* CTA Banner */}
-        <div className="container mx-auto p-4 lg:px-16 bg-amber-900 text-white lg:my-16 lg:py-16 my-8 py-8">
+        <div className="container mx-auto p-4 lg:px-16 bg-amber-900 text-white rounded-[16px] lg:my-16 lg:py-16 my-8 py-8">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between align-middle lg:items-center items-left space-y-4 md:space-y-0">
               <div className="lg:text-left md:text-left text-left">
@@ -229,7 +223,7 @@ export default function Home() {
                 </p>
               </div>
               <Link href="/contact">
-        <button className="px-6 py-2 bg-[#121212] text-white"> Contact Us </button>
+        <button className="px-6 py-2 rounded-full bg-[#121212] text-white"> Contact Us </button>
       </Link>
             </div>
           </div>
@@ -245,13 +239,13 @@ export default function Home() {
           <div className="relative">
             <div className="overflow-hidden">
               <img
-                src="/pic1.jpg"
+                src="/pic7.jpg"
                 alt="White duck close-up"
-                className="w-full lg:h-[700px] h-[350px] object-cover"
+                className="w-full rounded-[16px] lg:h-[700px] h-[350px] object-cover"
               />
             </div>
             {/* Decorative shape */}
-            <div className="absolute -bottom-6 -right-6 w-full h-full bg-amber-100 -z-10"></div>
+            <div className="absolute -bottom-6 -right-6 w-full h-full bg-amber-100 -z-10 rounded-[16px]"></div>
           </div>
 
           <div>
